@@ -304,6 +304,14 @@ li.cms-modules-menu-toggle .title {
 
 
 
+.form-buttons .btn {
+    min-width: 100px;
+}
+
+
+
+
+
 .login-block {
     margin-left: auto;
     margin-right: auto;
