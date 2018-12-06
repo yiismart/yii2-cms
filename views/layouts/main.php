@@ -40,8 +40,6 @@ $asset = AppAsset::register($this);
     </div>
 </div>
 
-
-
 <footer class="footer">
     <div class="container-fluid">
         <p class="float-left">&copy; yiismart/yii2-cms</p>
