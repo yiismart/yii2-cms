@@ -9,17 +9,21 @@ class AppAsset extends AssetBundle
 
     public $css = [
         'site.css',
-        // 'controls.css',
+        'controls.css',
+        'sidebar.css',
+        'login.css',
     ];
 
     public $js = [
-        'site.js',
+        'sidebar.js',
     ];
 
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap4\BootstrapAsset',
+        'yii\bootstrap4\BootstrapPluginAsset',
         'yii\web\JqueryAsset',
+        'smart\cms\assets\FontAwesomeAsset',
     ];
 
     public function init()

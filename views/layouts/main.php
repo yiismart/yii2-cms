@@ -23,21 +23,29 @@ $asset = AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
+    <div class="container-fluid">
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'homeLink' => false,
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
+        <div class="wrapper">
+            <div id="content">
+                <?= $this->render('header') ?>
+                <?= Breadcrumbs::widget([
+                    'homeLink' => false,
+                    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                ]) ?>
+                <?= Alert::widget() ?>
+                <?= $content ?>
+            </div>
+        </div>
+
     </div>
 </div>
 
+
+
 <footer class="footer">
     <div class="container-fluid">
-        <p class="pull-left">&copy; simple-yii2/cms</p>
-        <p class="pull-right">Powered by <?= Html::img($asset->baseUrl . '/powered.png', ['class' => 'powered-by']) ?></p>
+        <p class="float-left">&copy; yiismart/yii2-cms</p>
+        <p class="float-right">Powered by <?= Html::img($asset->baseUrl . '/powered.png', ['class' => 'powered-by']) ?></p>
     </div>
 </footer>
 
