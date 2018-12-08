@@ -164,20 +164,26 @@ class Module extends BackendModule
      */
     protected function makeMenu()
     {
-        //base path for routes
+        // Base path for routes
         $base = '/' . $this->id;
 
-        //modules menu
-        $items = [];
+        // Modules menu
+        $modulesMenu = [];
         foreach ($this->modules as $module) {
             if ($module instanceof BackendModule) {
-                $module->menu($items);
+                $module->menu($modulesMenu);
             }
         }
 
-        //cms menus
-        Yii::$app->params['menu-modules'] = $this->normalizeItems($items);
-        Yii::$app->params['menu-user'] = $this->normalizeItems($this->getModule('user')->userMenu());
+        // Header menu
+        $headerMenu = [
+            ['label' => Yii::t('cms', 'Site'), 'url' => '/'],
+            $this->getModule('user')->userMenu(),
+        ];
+
+        // CMS menus
+        Yii::$app->params['menu-modules'] = $this->normalizeItems($modulesMenu);
+        Yii::$app->params['menu-header'] = $this->normalizeItems($headerMenu);
     }
 
     /**
