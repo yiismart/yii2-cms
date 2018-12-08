@@ -1,7 +1,7 @@
 <?php
 
+use yii\bootstrap4\Breadcrumbs;
 use yii\helpers\Html;
-use yii\widgets\Breadcrumbs;
 use smart\cms\assets\AppAsset;
 use smart\cms\widgets\Alert;
 
