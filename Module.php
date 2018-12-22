@@ -5,6 +5,7 @@ namespace smart\cms;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
 use yii\rbac\BaseManager;
 use smart\base\BackendModule;
 use smart\user\components\User;
@@ -177,7 +178,11 @@ class Module extends BackendModule
 
         // Header menu
         $headerMenu = [
-            ['label' => Yii::t('cms', 'Site'), 'url' => '/'],
+            [
+                'label' => '<i class="fas fa-globe"></i><span class="d-none d-sm-inline"> ' . Html::encode(Yii::t('cms', 'Site')) . '</span>',
+                'encode' => false,
+                'url' => '/',
+            ],
             $this->getModule('user')->userMenu(),
         ];
 

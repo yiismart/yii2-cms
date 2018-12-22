@@ -9,8 +9,9 @@ use yii\helpers\Html;
 
         <button type="button" id="sidebarCollapse" class="btn btn-dark">
             <i class="fas fa-bars"></i>
-            <span><?= Html::encode(Yii::t('cms', 'Modules')) ?></span>
         </button>
+
+        <?= Html::a('SMART', Yii::$app->getHomeUrl()) ?>
 
         <?= Nav::widget([
             'options' => ['class' => 'navbar-nav'],

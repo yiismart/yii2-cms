@@ -1,84 +1,74 @@
-.btn-toolbar {
-    margin-bottom: 20px;
+.form-buttons .btn {
+    min-width: 100px;
 }
 
 
-.nav-tabs {
-    margin-bottom: 20px;
+
+
+
+.not-set {
+    color: #c55;
+    font-style: italic;
 }
 
 
+
+
+
+/* Form required field label */
 .form-group.required > label {
     position: relative;
 }
-.form-group.required > label.control-label:after {
+
+.form-group.required > label:after {
     color: #a94442;
     content: '*';
     display: inline-block;
-    margin-right: -10px;
-    width: 10px;
+    margin: 0 -10px 0 3px;
+    width: 7px;
 }
 
 
-.dropdown-submenu > .dropdown-menu {
-    right: auto;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-.dropdown-submenu > a:after {
-    border-width: 4px 0 4px 4px;
-    margin-top: 6px;
-}
-.dropdown-submenu.open > a:after {
-    border-left-color: #555;
-}
-@media (max-width: 767px) {
-    .navbar-nav .dropdown-menu > li.dropdown-submenu > a {
-        padding-right: 20px;
-    }
-    .navbar-nav .dropdown-submenu > .dropdown-menu {
-        padding-left: 15px;
-    }
-    .navbar-inverse .dropdown-submenu > a:after {
-        border-left-color: #9d9d9d;
-    }
-    .navbar-inverse .dropdown-submenu > a:hover:after,
-    .navbar-inverse .dropdown-submenu > a:focus:after {
-        border-left-color: #fff;
-    }
-}
 
 
-.ui-widget {
-    font-family: inherit;
-}
-.ui-menu {
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    padding: 5px 0;
-}
-.ui-menu .ui-menu-item {
-    color: #333;
-    font-weight: normal;
-    line-height: 1.42857143;
-    list-style: none;
-    padding: 3px 20px;
+
+/* Grid views */
+.grid-view th {
     white-space: nowrap;
 }
-.ui-menu .ui-state-focus,
-.ui-menu .ui-state-active {
-    background: #f5f5f5!important;
-    border: none;
-    color: #262626;
-    margin: 0;
+
+/* Add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\f15d";
+}
+
+a.desc:after {
+    content: "\f15e";
+}
+
+.sort-numerical a.asc:after {
+    content: "\f162";
+}
+
+.sort-numerical a.desc:after {
+    content: "\f163";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\f160";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\f161";
 }
