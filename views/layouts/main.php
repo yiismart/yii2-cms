@@ -16,7 +16,7 @@ $asset = AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <?= Html::tag('link', '', ['rel' => 'shortcut icon', 'href' => $asset->baseUrl . '/logo.png', 'type' => 'image/png']) ?>
+    <?= Html::tag('link', '', ['rel' => 'shortcut icon', 'href' => $asset->baseUrl . '/img/logo32.png', 'type' => 'image/png']) ?>
     <?php $this->head() ?>
 </head>
 <body>
@@ -27,7 +27,7 @@ $asset = AppAsset::register($this);
 
         <div class="wrapper">
             <div id="content">
-                <?= $this->render('header') ?>
+                <?= $this->render('partials/header') ?>
                 <?= Breadcrumbs::widget([
                     'homeLink' => false,
                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -43,7 +43,7 @@ $asset = AppAsset::register($this);
 <footer class="footer">
     <div class="container-fluid">
         <p class="float-left">&copy; yiismart/yii2-cms</p>
-        <p class="float-right">Powered by <?= Html::img($asset->baseUrl . '/powered.png', ['class' => 'powered-by']) ?></p>
+        <p class="float-right">Powered by <?= Html::img($asset->baseUrl . '/img/powered.png', ['class' => 'powered-by']) ?></p>
     </div>
 </footer>
 
