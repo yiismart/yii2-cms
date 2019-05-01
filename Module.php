@@ -90,8 +90,9 @@ class Module extends BackendModule
         //application home url
         $app->homeUrl = ['/' . $this->id . '/default/index'];
 
-        //original bootstrap theme
-        $app->assetManager->bundles['yii\bootstrap\BootstrapAsset']['sourcePath'] = '@bower/bootstrap/dist';
+        //remove asset bundles
+        $app->assetManager->bundles['yii\bootstrap4\BootstrapAsset'] = false;
+        $app->assetManager->bundles['yii\bootstrap4\BootstrapPluginAsset'] = false;
 
         //error page
         $app->errorHandler->errorAction = '/' . $this->id . '/default/error';

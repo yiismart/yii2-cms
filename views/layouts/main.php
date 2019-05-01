@@ -31,6 +31,7 @@ $asset = AppAsset::register($this);
                 <?= Breadcrumbs::widget([
                     'homeLink' => false,
                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                    'navOptions' => ['class' => 'breadcrumbs-wrap'],
                 ]) ?>
                 <?= Alert::widget() ?>
                 <?= $content ?>
