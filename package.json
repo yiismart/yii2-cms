@@ -1,0 +1,8 @@
+{
+  "name": "yiismart-cms",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node-sass --output-style compressed --source-map true --source-map-contents true --precision 6 assets/app/scss/site.scss assets/app/dist/css/site.css"
+  },
+  "license": "ISC"
+}

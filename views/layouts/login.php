@@ -15,18 +15,20 @@ $asset = AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-    <?= Html::tag('link', '', ['rel' => 'shortcut icon', 'href' => $asset->baseUrl . '/logo.png', 'type' => 'image/png']) ?>
+    <?= Html::tag('link', '', ['rel' => 'shortcut icon', 'href' => $asset->baseUrl . '/img/logo32.png', 'type' => 'image/png']) ?>
     <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
-    <div class="container">
-        <div class="login-block">
-            <?= Alert::widget() ?>
-            <?= $content ?>
+<div class="login-wrap bg-light">
+    <div class="login-block">
+        <div class="login-header">
+            <span class="header-title">yii<strong>smart</strong></span>
+            <span class="header-version"><?= \smart\cms\Module::VERSION ?></span>
         </div>
+        <?= $content ?>
+        <?= Alert::widget() ?>
     </div>
 </div>
 

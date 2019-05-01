@@ -12,6 +12,7 @@ use smart\user\components\User;
 
 class Module extends BackendModule
 {
+    const VERSION = 'v2 Alpha';
 
     /**
      * @inheritdoc
@@ -220,5 +221,4 @@ class Module extends BackendModule
         }
         return $items;
     }
-
 }
