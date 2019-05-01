@@ -40,13 +40,6 @@ $asset = AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container-fluid">
-        <p class="float-left">&copy; yiismart/yii2-cms</p>
-        <p class="float-right">Powered by <?= Html::img($asset->baseUrl . '/img/powered.png', ['class' => 'powered-by']) ?></p>
-    </div>
-</footer>
-
 <?php $this->endBody() ?>
 </body>
 </html>
