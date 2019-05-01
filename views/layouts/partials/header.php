@@ -11,7 +11,7 @@ use yii\helpers\Html;
             <i class="fas fa-bars"></i>
         </button>
 
-        <?= Html::a('SMART', Yii::$app->getHomeUrl(), ['class' => 'mr-auto']) ?>
+        <?= Html::a('yii<strong>smart</strong>', Yii::$app->getHomeUrl(), ['class' => 'header-logo']) ?>
 
         <?= Nav::widget([
             'options' => ['class' => 'navbar-nav'],

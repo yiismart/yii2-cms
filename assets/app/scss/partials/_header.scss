@@ -1,0 +1,15 @@
+.header-logo {
+    background-image: url('../img/logo200.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    color: $white !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: $font-size-lg;
+    height: 34px;
+    line-height: 34px;
+    margin-left: $spacer * 1.5;
+    margin-right: auto;
+    padding-left: 40px;
+    text-decoration: none !important;
+}
