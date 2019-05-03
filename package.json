@@ -1,8 +1,16 @@
 {
   "name": "yiismart-cms",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "license": "MIT",
   "scripts": {
-    "build": "node-sass --output-style compressed --source-map true --source-map-contents true --precision 6 assets/app/scss/site.scss assets/app/dist/css/site.css"
+    "build": "grunt build",
+    "watch": "grunt watch"
   },
-  "license": "ISC"
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.2",
+    "node-sass": "^4.12.0"
+  }
 }

@@ -9,13 +9,11 @@ class AppAsset extends AssetBundle
     public $sourcePath = __DIR__ . '/app/dist';
 
     public $css = [
-        'css/site.css',
+        'css/main.css',
     ];
 
     public $js = [
-        'js/bootstrap.min.js',
-        'js/bootstrap.bundle.min.js',
-        'js/sidebar.js',
+        'js/main.js',
     ];
 
     public $depends = [
