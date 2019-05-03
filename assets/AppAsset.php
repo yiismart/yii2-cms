@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class AppAsset extends AssetBundle
 {
-    public $sourcePath = __DIR__ . '/app/dist';
+    public $sourcePath = __DIR__ . '/dist';
 
     public $css = [
         'css/main.css',

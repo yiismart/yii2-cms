@@ -10,8 +10,8 @@ module.exports = function(grunt) {
                 outputStyle: 'compressed'
             },
             dist: {
-                src: 'assets/app/src/scss/main.scss',
-                dest: 'assets/app/dist/css/main.css'
+                src: 'assets/src/scss/main.scss',
+                dest: 'assets/dist/css/main.css'
             }
         },
 
@@ -20,21 +20,21 @@ module.exports = function(grunt) {
                 mangle: false
             },
             all: {
-                src: 'assets/app/src/js/**/*.js',
-                dest: 'assets/app/dist/js/main.js'
+                src: 'assets/src/js/**/*.js',
+                dest: 'assets/dist/js/main.js'
             }
         },
 
         watch: {
             js: {
-                files: ['assets/app/src/js/**/*.js'],
+                files: ['assets/src/js/**/*.js'],
                 tasks: ['uglify'],
                 options: {
                     livereload: true
                 }
             },
             sass: {
-                files: ['assets/app/src/scss/**/*.scss'],
+                files: ['assets/src/scss/**/*.scss'],
                 tasks: ['sass'],
                 options: {
                     livereload: true
