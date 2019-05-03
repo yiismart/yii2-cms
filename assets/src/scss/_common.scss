@@ -11,11 +11,11 @@ body {
 }
 
 #content {
-    padding-top: 56px;
+    padding-top: $header-height;
 }
 
 #content > .navbar {
-    height: 56px;
+    height: $header-height;
 }
 
 #content > .breadcrumbs-wrap {

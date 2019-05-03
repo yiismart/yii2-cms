@@ -7,7 +7,7 @@ use yii\helpers\Html;
 <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
 
-        <button type="button" id="sidebarCollapse" class="btn btn-dark">
+        <button type="button" id="sidebar-collapse" class="btn btn-dark">
             <i class="fas fa-bars"></i>
         </button>
 
