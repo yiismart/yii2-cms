@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "grunt build",
+    "build": "grunt build"
   },
   "devDependencies": {
     "grunt": "^1.0.4",
