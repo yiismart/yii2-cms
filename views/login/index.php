@@ -21,7 +21,7 @@ if ($model->hasErrors()) {
             <div class="col-12 login-password"><?= Html::activePasswordInput($model, 'password', ['class' => 'form-control', 'placeholder' => $model->getAttributeLabel('password')]) ?></div>
 
             <div class="col-12 login-button">
-                <div class="wrap-remember-me"><?= Html::activeCheckbox($model, 'rememberMe', ['class' => 'custom']) ?></div>
+                <div class="wrap-remember-me"><?= Html::activeCheckbox($model, 'rememberMe') ?></div>
                 <div class="wrap-button"><?= Html::submitButton(Yii::t('user', 'Login'), ['class' => 'btn btn-primary']) ?></div>
             </div>
         </div>

@@ -4,10 +4,11 @@ $checkbox-bg: $gray-300 !default;
 $checkbox-bg-hover: $gray-400 !default;
 $checkbox-bg-checked: $primary !default;
 
-input[type="checkbox"].custom {
+input[type="checkbox"]:not(.default) {
     cursor: pointer;
     height: $checkbox-size;
     margin-right: $spacer / 4;
+    margin-top: 0;
     position: relative;
     top: -2px;
     vertical-align: middle;
