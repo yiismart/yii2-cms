@@ -12,6 +12,11 @@ body {
 
 #content {
     padding-top: $header-height;
+    padding-left: $sidebar-width;
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 0;
+    }
 }
 
 #content > .navbar {

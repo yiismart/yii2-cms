@@ -4,10 +4,10 @@
     position: fixed;
     top: $header-height;
     transition: left .2s;
-    width: 220px;
+    width: $sidebar-width;
 
     @include media-breakpoint-down(lg) {
-        left: -220px;
+        left: -$sidebar-width;
         top: 0;
     }
 
