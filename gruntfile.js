@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 implementation: sass,
                 outputStyle: 'compressed'
             },
-            dist: {
+            backend: {
                 src: 'assets/src/scss/main.scss',
                 dest: 'assets/dist/css/main.css'
             }
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             options: {
                 mangle: false
             },
-            all: {
+            backend: {
                 src: 'assets/src/js/**/*.js',
                 dest: 'assets/dist/js/main.js'
             }
