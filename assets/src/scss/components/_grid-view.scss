@@ -47,4 +47,12 @@
             content: "\f161";
         }
     }
+
+    td.action {
+        text-align: center;
+        white-space: nowrap;
+    }
+    td.action-2 {
+        width: 3.5em;
+    }
 }
