@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'user' => 'smart\user\Module',
+    'user' => 'smart\user\backend\Module',
 ];
