@@ -1,3 +1,5 @@
+$list-icon-size: $font-size-base * $line-height-base * 2;
+
 .grid-view {
     .not-set {
         color: desaturate($danger, 10%);
@@ -59,5 +61,20 @@
 
     td.action-2 {
         width: 3.5em;
+    }
+
+    tr.table-inactive {
+        background-color: rgba($black, .1) !important;
+        opacity: .5;
+    }
+
+    .list-icon {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        float: left;
+        height: $list-icon-size;
+        margin-right: $spacer * .5;
+        width: $list-icon-size;
     }
 }
