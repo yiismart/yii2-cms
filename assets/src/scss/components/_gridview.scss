@@ -63,6 +63,10 @@ $list-icon-size: $font-size-base * $line-height-base * 2;
         width: 3.5em;
     }
 
+    td.action-3 {
+        width: 4.7em;
+    }
+
     tr.table-inactive {
         background-color: rgba($black, .1) !important;
         opacity: .5;
